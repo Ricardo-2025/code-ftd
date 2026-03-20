@@ -381,3 +381,29 @@ Adobe Commerce com 4 frentes:
 | **Farmer** | Consultor que mantém contas existentes |
 | **Smart POS** | Terminal de pagamento para plantão de vendas |
 | **Código Substituto** | Link entre produto antigo e novo (entre safras) |
+
+---
+
+## 11. CONTEXTO DE MERCADO E NOTÍCIAS RECENTES (2025-2026)
+
+### 11.1 Projeções e Volume
+- **Safra 2026**: Previsão de mais de **500.000 pedidos** de materiais didáticos e literatura.
+- **Transformação Digital**: Faturamento alvo de R$ 3 bilhões até 2030 (Expectativa 2025: R$ 1,5 bilhão).
+- **IA e Automação**: Foco massivo em IA generativa para eficiência no atendimento ao cliente (Volta às Aulas 2026).
+
+### 11.2 Ecossistema Digital & Edtechs
+A FTD Educação atua como um ecossistema integrado que inclui:
+- **iônica**: Ambiente digital principal de aprendizagem.
+- **Pontue**: Inteligência Artificial para correção de redações (adquirida pela FTD).
+- **Estuda.com**: Plataforma de avaliação e simulados (participação minoritária).
+- **Diário Escola**: Sistema de gestão e comunicação escolar (parceiro estratégico).
+- **Quantbot**: Projeto Azure/Microsoft de robótica e programação gamificada.
+
+### 11.3 Premiações e Certificações
+- **Selo Top Employer 2025**: Reconhecida pela excelência em RH e gestão de pessoas.
+- **Top 50 Globais**: Reconhecida mundialmente entre as maiores editoras pela Publishers Weekly.
+- **Compliance BNCC**: 100% dos materiais alinhados à Base Nacional Comum Curricular.
+
+---
+*Gerado com base em: Knowledge Base FTD, Transcrições 2026 e Dados Públicos (Microsoft Case, PublishNews).*
+

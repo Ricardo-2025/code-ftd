@@ -369,21 +369,44 @@ Scope "Try" {
 
 ```mermaid
 flowchart TD
-    START["Proposta ftd_nivel_alcada calculado"] --> L1
+    START["Proposta ftd_nivel_alcada calculado (1-7)"] --> L1
 
     L1{"Nível 1:\nConsultor auto-aprova?"}
-    L1 -->|Sim| APPROVED["✅ Aprovado\nStatus → Aprovado"]
-    L1 -->|Não → Nível 2| A2["Approval Action\nCoordenador + Gerente\n(Teams/Outlook)"]
+    L1 -->|Sim| APPROVED["✅ Aprovado\nStatus → Aprovada s/ Assinatura"]
+    L1 -->|Não| A2["Nível 2: Coordenador"]
+    
     A2 -->|Aprovado| L2{"Nível 3\nnecessário?"}
-    A2 -->|Recusado| REJECTED["❌ Recusado\nNotificar Consultor"]
+    A2 -->|Recusado| REJECTED["❌ Recusada\nNotificar Consultor"]
+    
     L2 -->|Não| APPROVED
-    L2 -->|Sim| A3["Approval Action\nDiretor Adjunto"]
+    L2 -->|Sim| A3["Nível 3: Gerente Filial"]
+    
     A3 -->|Aprovado| L3{"Nível 4\nnecessário?"}
     A3 -->|Recusado| REJECTED
+    
     L3 -->|Não| APPROVED
-    L3 -->|Sim| A4["Approval Action\nDiretor Comercial (Quintela)"]
-    A4 -->|Aprovado| APPROVED
+    L3 -->|Sim| A4["Nível 4: Gerente Regional"]
+    
+    A4 -->|Aprovado| L4{"Nível 5\nnecessário?"}
     A4 -->|Recusado| REJECTED
+    
+    L4 -->|Não| APPROVED
+    L4 -->|Sim| A5["Nível 5: Dir. Adjunto (DG)"]
+    
+    A5 -->|Aprovado| L5{"Nível 6\nnecessário?"}
+    A5 -->|Recusado| REJECTED
+    
+    L5 -->|Não| APPROVED
+    L5 -->|Sim| A6["Nível 6: Dir. Superintendente"]
+    
+    A6 -->|Aprovado| L6{"Nível 7\nnecessário?"}
+    A6 -->|Recusado| REJECTED
+    
+    L6 -->|Não| APPROVED
+    L6 -->|Sim| A7["Nível 7: Presidente (GM)"]
+    
+    A7 -->|Aprovado| APPROVED
+    A7 -->|Recusado| REJECTED
 ```
 
 ---
